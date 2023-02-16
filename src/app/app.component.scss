@@ -1,0 +1,37 @@
+.input{
+  display: block;
+  padding: 0.5em 1.5em 0.5em 0.5em;
+  width: 100%;
+  border: none;
+  background: var(--primary-color-2);
+  color: var(--font-color);
+  font-size: 2em;
+  line-height: 0;
+  transition: all .5s linear;
+}
+
+.eye{
+  width: 50px;
+  right: 0;
+  position: absolute;
+  display: block;
+  z-index: 1;
+  transform: translateY(10%);
+}
+
+.input-container{
+  width: 500px;
+  height: 60px;
+  display: flex;
+  flex: 1;
+  justify-content: flex-start;
+  position: relative;
+}
+
+.form-container{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}

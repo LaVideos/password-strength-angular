@@ -1,10 +1,30 @@
 import { Component } from '@angular/core';
+import {FormControl, FormGroup, Validators} from "@angular/forms";
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.scss']
 })
+
 export class AppComponent {
-  title = 'password-strength-angular';
+  strongPassword:boolean = false;
+  show:boolean = false;
+
+  form = new FormGroup({
+    password: new FormControl("",  {validators:[Validators.minLength(8)]}),
+  });
+
+  get f() {
+    return this.form.controls;
+  }
+
+  onPasswordStrengthChanged(event: boolean) {
+    this.strongPassword = event;
+  }
+
+  showPassword() {
+    this.show = !this.show
+  }
+
 }

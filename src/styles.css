@@ -1,1 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
+*{
+  font-family: "Montserrat", serif;
+  margin: 0;
+}
+
+body{
+  --eazy: #eaa182;
+  --medium: #e7e593;
+  --hard: #7bbd7f;
+  --too-short: #e56464;
+  --font-color:#464455;
+  --primary-color:#ddd;
+  --primary-color-2: rgba(0,0,0,0.05);
+}
